@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+  </head>
+  	<style>
+		.nav-pills > li.nav-item > a{
+		color: #17a2b8;
+	}
+	.nav-pills >li> a.active, .nav-pills > .active > a:hover {
+		background-color: #17a2b8!important;
+	}
+	.navbar-collapse > ul.nav-pills > li.nav-item > a{
+		color: #17a2b8;
+	}
+	.img-thumbnail{
+	    border:1px solid #343a40;
+		background:#343a40;
+	
+	}
+	</style>
+  <body data-spy="scroll" data-target="#navbar-example3" data-offset="1">
+  <div class="container-fluid">
+  <div class="row">
+	<nav id="navbar-example3" class="navbar navbar-expand-lg navbar-dark bg-dark d-xl-none d-lg-none fixed-top">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav nav-pills mr-auto">
+				<li><a class="navbar-brand my-3 text-light" href="#"><strong> PROGETTO AUTOTRUCK </strong> </a></li>
+				<li class="nav-item"><a class="nav-link" href="#intro">Introduzione</a></li>
+				<li class="nav-item"><a class="nav-link" href="#comandi">Comandi</a></li>
+				<li class="nav-item"><a class="nav-link" href="#fisica">Fisica</a></li>
+				<li class="nav-item"><a class="nav-link" href="#modalita">Modalità di Gioco</a></li>
+				<li class="nav-item"><a class="nav-link" href="#notte">Modalità Notte</a></li>
+				<li class="nav-item"><a class="nav-link" href="#wireframe">Wireframe</a></li>
+				<li class="nav-item"><a class="nav-link" href="#altro">Funzioni Secondarie</a></li>
+				<li class="nav-item"><a class="nav-link" href="#opengl">OpenGL</a></li>
+				<li class="nav-item"><a class="nav-link" href="#info">Altre Informazioni</a></li>
+			</ul>
+		</div>
+	</nav>
+		
+	<div class="col-2 d-none d-lg-block bg-dark v-100">
+	<nav class="nav fixed-top py-5 col-2">
+		
+	  <ul class="nav">
+	  <nav id="navbar-example3" class="nav nav-pills flex-column mt-3">
+		<li><a class="navbar-brand text-light mb-5 ml-3" href="#"><strong> PROGETTO<br> AUTOTRUCK </strong> </a></li>
+		<li class="nav-item"><a class="nav-link" href="#intro">Introduzione</a></li>
+		<li class="nav-item"><a class="nav-link" href="#comandi">Comandi</a></li>
+		<li class="nav-item"><a class="nav-link" href="#fisica">Fisica</a></li>
+		<li class="nav-item"><a class="nav-link" href="#modalita">Modalità di Gioco</a></li>
+		<li class="nav-item"><a class="nav-link" href="#notte">Modalità Notte</a></li>
+		<li class="nav-item"><a class="nav-link" href="#wireframe">Wireframe</a></li>
+		<li class="nav-item"><a class="nav-link" href="#altro">Funzioni Secondarie</a></li>
+		<li class="nav-item"><a class="nav-link" href="#opengl">OpenGL</a></li>
+		<li class="nav-item"><a class="nav-link" href="#info">Altre Informazioni</a></li>
+		
+	  </nav>
+	  </ul>
+	</nav>
+
+	</div>
+	<div class="col-lg-10 px-5 py-5 bg-info text-dark">
+		<h1 class="text-center display-3 font-weight-bold mb-3">PROGETTO AUTOTRUCK</h1>
+		<img class="mx-auto d-block mt-5 mb-3 img-fluid rounded-lg img-thumbnail" src="img/Immagine.png" width=600 alt="Responsive image">
+		<h4 class="text-center text-monospace mb-0">Studente: Mattia Benatti</h4>
+		<h4 class="text-center text-monospace mb-0">Corso: Grafica</h4>
+		<h4 class="text-center text-monospace mb-0">Corso di Studi: Informatica Magistrale</h4>
+		<section id="intro" class="text-justify my-5 py-5">
+		<div class="my-auto">
+			
+			<p class="lead">
+				Il progetto Autotruck consiste in un videogioco nel quale l’utente ha la possibilità di guidare un camion, composto da una motrice e un rimorchio, in diverse tipologie di modalità che saranno spiegate in seguito. Per la realizzazione di questo progetto sono stati ricalcati in generale alcuni dei passaggi svolti nel progetto Car mostrato a lezione, dividendolo inizialmente anche in questo caso in 4 fasi nelle quali sono state aggiunte, modificate e ampliate man mano le funzionalità che integrano il progetto; infine è stata creata una quinta fase finale dove tutto il sistema risulta completo e interattivo, con nuove funzionalità non presenti nel progetto Car di esempio. L'implementazione è stata realizzata interamente in C++ e, in particolare, per la parte di grafica sono state utilizzate le librerie SDL e OpenGL.
+			</p>
+		</div>
+		</section>
+		<hr>
+		<section id="comandi" class="text-justify my-5 py-5">
+		<div class="my-auto">
+			<h2 class="text-uppercase display-5 mb-3">Comandi</h2>
+			<div class="row">
+				<div class="col-3">
+					<p>	<b>- COMANDI DEL CAMION -</b><br>
+						<b>W</b>: Accelera<br>
+						<b>S</b>: Frena/Retromarcia<br>
+						<b>A</b>: Curva a Sinistra<br>
+						<b>D</b>: Curva a Destra<br>
+						
+					</p>
+				</div>
+				<div class="col-4">
+					<p>	<b>- COMANDI DI GIOCO -</b><br>
+						<b>F1</b>: Cambia Camera<br>
+						<b>F2</b>: Attiva/Disattiva Wireframe<br>
+						<b>F3</b>: Accendi/Spegni fari<br>
+						<b>F4</b>: Attiva/Disattiva Ombre<br>
+						<b>O</b>: Menu Principale<br>
+						<b>SHIFT+NUM</b>: Modalità Notte<br>
+						<b>Q</b>: Esci<br>
+						<b>MOUSE</b>: Muovi Camera Fissa<br>
+						
+
+						
+					</p>
+			</div>
+		</div>
+		</div>
+		</section>
+		<hr>
+		<section id="fisica" class="text-justify my-5 py-5">
+		<div class="my-auto">
+			<h2 class="text-uppercase mb-3">Fisica</h2>
+			<p>
+				La principale modifica che ha caratterizzato tutto il progetto rispetto a Car è stata l’utilizzo di un rimorchio, la quale fisica complessiva del movimento dell’automezzo porta a varie differenze rispetto a una automobile. Per prima cosa il rimorchio deve seguire il movimento della motrice, ma le due componenti dovranno avere parametri differenti a causa del diverso peso e della diversa grandezza. Si ricordi che è sempre la motrice la componente che guida il tutto, mentre il rimorchio si adatta di conseguenza. Sarà introdotto anche una sorta di “ritardo” con cui il rimorchio dovrà eseguire i movimenti rispetto alla motrice, i quali dovranno comunque essere vincolati in modo tale che il primo non possa ruotare più di un certo numero di gradi rispetto al secondo, così da renderlo realistico. Inoltre, dopo aver effettuato una curva, al rimorchio occorrerà qualche secondo per “ristabilizzarsi” con la motrice, sbilanciandosi per i primi istanti da una parte all’altra, a seconda della velocità e dell’angolo della curva. Una novità che invece è stata introdotta più per uno scopo ludico e di esperimento piuttosto che per realismo riguarda la possibilità che il rimorchio possa sbilanciarsi rispetto all’asse verticale durante una curva: in particolare, se tale sbilanciamento supererà un determinato limite, il rimorchio si capovolgerà di 90 gradi, staccandosi dalla motrice e continuando ad andare dritto fino a che non esaurisce l’energia che aveva prima di cadere. Dopo quel momento, motrice e rimorchio diventeranno 2 componenti completamente separate, delle quali l’utente potrà controllare solamente la prima, mentre la seconda rimarrà fissa nella scena.
+			</p>
+			<figure class="figure mt-4 mx-auto d-block">
+			  <img src="img/Immagine5.png" class="figure-img img-thumbnail img-fluid rounded-lg mx-auto d-block" width=600 alt="Responsive image">
+			  <figcaption class="figure-caption text-center text-dark mx-auto d-block">Motrice e rimorchio: le 2 componenti separate</figcaption>
+			</figure>
+		</div>
+		</section>
+		<hr>
+		<section id="modalita" class="text-justify my-5 py-5">
+		<div class="my-auto">
+			<h2 class="text-uppercase mb-3">Modalità di Gioco</h2>
+			<p>
+				Una delle modalità di interazione fra utente e videogame è la stessa di quella del progetto Car, ovvero un giro semplice con l’automezzo controllato dai comandi del giocatore all’interno del mondo creato. Oltre a questa modalità comune, però, sono state aggiunte altre 2 modalità, alle quali è possibile accedere tramite il menù principale spingendo il tasto "O".
+			</p>
+			<figure class="figure mt-4 mx-auto d-block">
+			  <img src="img/Immagine8.png" class="figure-img img-fluid img-thumbnail rounded-lg mx-auto d-block" width=600 alt="Responsive image">
+			  <figcaption class="figure-caption text-center text-dark mx-auto d-block">Menù Principale: si possono selezionare le diverse modalità o lasciare in pausa il gioco</figcaption>
+			</figure>
+			<p>		
+				Durante la prima apertura del videogioco comincerà una fase del tutorial automatica, nella quale vengono mostrati all’utente tutti i possibili comandi per guidare il mezzo e per accedere o attivare/disattivare diverse funzionalità durante il gioco. In questa fase i comandi dell’utente sono disabilitati e il mezzo verrà guidato in automatico, mentre in alto appariranno dei brevi testi che spiegheranno il funzionamento del relativo comando selezionato, mentre a sinistra sarà possibile vedere la griglia dei tasti “W A S D” utilizzati per guidare il mezzo, dove verrà evidenziato il tasto attivo per eseguire l’azione di quel determinato momento. Dopo la prima volta, il videogioco inizierà direttamente dal giro normale quando verrà avviato, mentre il tutorial potrà tornare ad essere visualizzato scegliendo la modalità dal menù principale, che appare cliccando sul tasto O.
+			</p>
+			<figure class="figure mt-4 mx-auto d-block">
+			  <img src="img/Immagine4.png" class="figure-img img-fluid img-thumbnail rounded-lg mx-auto d-block" width=600 alt="Responsive image">
+			  <figcaption class="figure-caption text-center text-dark mx-auto d-block">Modalità Tutorial: vengono spiegati i comandi e vengono mostrate le rispettive funzionalità</figcaption>
+			</figure>
+			<p>
+				La terza modalità consiste in una gara a tempo. Nella schermata sarà presente in alto a sinistra un cronometro per misurare il tempo per giro in tempo reale, in alto a destra ci sarà il tempo effettuato nell’ultimo giro e il numero dell’ultimo giro, sotto a quest’ultimo ci sarà il tempo migliore e il numero di quel giro, il quale può essere stato effettuato in questa sessione o preso da un file di testo contenente il tempo migliore di tutte le sessioni (in quel caso il numero di giro sarà settato a 0). Mentre nelle altre modalità il giocatore parte dalle coordinate di origine (0,0) del mondo e con un'angolazione di 0 gradi, ovvero diritto nel suo centro, in questa modalità il giocatore parte da uno specifico punto della pista, che rappresenterà il punto iniziale, e con una determinata angolazione, coerente alla direzione del percorso. Nello specifico, è stato creato con il software <a class="text-dark" href="www.blender.com"><strong>Blender</strong></a> un rettangolo di partenza nero che si andrà a sovrapporre allo a un rettangolo di pista e sotto di esso la scritta “START” per indicare l’inizio del percorso. L’automezzo verrà posizionato al centro della pista in larghezza e dietro al rettangolo di partenza. Ogni giro di corsa finirà al raggiungimento della linea finale del rettangolo: a quel punto verrà registrato il tempo finale del giro e il numero del giro nella parte in alto a destra della schermata descritta prima, il cronometro verrà resettato e inizierà un nuovo giro. Durante il primo giro di corsa, prima di avviare il cronometro, viene avviato un countdown al centro dello schermo per preparare il giocatore, durante il quale ovviamente tutti i comandi di movimento sono disabilitati.
+
+			</p>
+			<figure class="figure mt-4 mx-auto d-block">
+			  <img src="img/Immagine3.png" class="figure-img img-fluid img-thumbnail rounded-lg mx-auto d-block" width=600 alt="Responsive image">
+			  <figcaption class="figure-caption text-center text-dark mx-auto d-block">Modalità Gara: countdown prima della partenza</figcaption>
+			</figure>
+		</div>
+		</section>
+		<hr>
+		<section id="notte" class="text-justify my-5 py-5">
+		<div class="my-auto">
+			<h2 class="text-uppercase mb-3">Modalità Notte</h2>
+			<p>
+				Un’altra funzionalità introdotta in questo progetto e disponibile in ognuna delle modalità descritte è la possibilità di cambiare l’orario dell’ambientazione selezionando una modalità notturna: in tal caso verrà modificata la texture utilizzata per definire la sfera del mondo che rappresenta il cielo, passando da quello di base azzurro limpido ad uno notturno e stellato. Di conseguenza, per rendere realistico il mondo vengono modificate anche le luci dell’ambiente, che saranno molto più basse e tenui, come i colori degli oggetti in scena che appariranno più scuri essendo illuminati da questo tipo di luci. In questo tipo di modalità verranno impostati in automatico come attivi i fari dell’automezzo, che illumineranno la strada davanti in un determinato raggio. Il giocatore avrà comunque la possibilità di disattivarli, lasciando come unica fonte luminosa quella ambientale. Al contrario, le ombre verranno disattivate in automatico, dato che l’assenza di sorgenti luminose di un ambiente buio non può generare ombre. Per il motivo appena descritto, in questo caso è stata anche disabilitata completamente la funzionalità per la generazione delle ombre che potrebbe attivare il giocatore, dato che renderebbe le luci della scena contraddittorie e il mondo non realistico.
+
+			</p>
+			<figure class="figure mt-4 mx-auto d-block">
+			  <img src="img/Immagine6.png" class="figure-img img-fluid img-thumbnail rounded-lg mx-auto d-block" width=600 alt="Responsive image">
+			  <figcaption class="figure-caption text-center text-dark mx-auto d-block">Modalità Notte: tutte le luci sono attenuate, le ombre disattivate e i fari accesi</figcaption>
+			</figure>
+		</div>
+		</section>
+		<hr>
+		<section id="wireframe" class="text-justify my-5 py-5">
+		<div class="my-auto">
+			<h2 class="text-uppercase mb-3">Wireframe</h2>
+			<p>
+				Una funzionalità aggiuntiva prevede di rappresentare tutta la scena tramite wireframe, ovvero disegnando solo gli spigoli degli oggetti: ad ogni oggetto della scena sarà associato con un colore rappresentativo, come ad esempio l'azzurro per il cielo, il verde per il terreno, il rosso per la motrice e il blu per il rimorchio. Anche l'ombra, nel caso sia attiva, passerà per questo processo. In questo modo è possibile visualizzare gli oggetti tramite tutti i triangoli elementari di cui sono composti. 
+
+			</p>
+			<figure class="figure mt-4 mx-auto d-block">
+			  <img src="img/Immagine7.png" class="figure-img img-fluid img-thumbnail rounded-lg mx-auto d-block" width=600 alt="Responsive image">
+			  <figcaption class="figure-caption text-center text-dark mx-auto d-block">Rappresentazione Wireframe: tutti gli oggetti sono rappresentati solo tramite le linee di base</figcaption>
+			</figure>
+		</div>
+		</section>
+		<hr>
+		<section id="altro" class="text-justify my-5 py-5">
+		<div class="my-auto">
+			<h2 class="text-uppercase mb-3">Funzionalità secondarie</h2>
+			<p>
+				Oltre alle modalità e alle funzionalità principali descritte, il videogioco prevede una serie di funzionalità minori da poter attivare o disattivare all’interno del gioco. Per prima cosa è possibile cambiare fra diversi tipi di inquadrature: quella di default prevede una camera posizionata dietro all’automezzo che seguirà i movimenti della motrice. Si potrà quindi cambiare passando a una camera frontale posizionata all’altezza del guidatore, una che riprende la scena dall’alto, una angolare spostata di un certo numero di gradi rispetto alla motrice e infine una che rimane fissa nel mondo, dove sarà il giocatore che sposterà l’inquadratura in alto, in basso, a destra o a sinistra cliccando e trascinando il mouse oppure si avvicinerà o si allontanerà utilizzando la rotella.
+			</p>
+			<p>
+			Altre due importanti funzionalità secondarie delle quali è già stato discusso precedentemente riguardano la possibilità di utilizzare i fari dell’automezzo e quella di poter generare l’ombra di esso. Per quanto riguarda la prima, è utilizzabile sia nelle modalità giorno che notte, anche se in queste ultime avrà ovviamente più rilevanza. Le sorgenti dei raggi luminosi prodotti dai fari sono state posizionate esattamente sulle luci anteriori dell’automezzo ed illuminano la strada davanti per un determinato raggio e angolazione, seguendo il movimento della motrice. 
+			</p>
+			<p>
+			Per le ombre invece, come anticipato, sarà possibile attivarle e disattivarle solamente nella modalità giorno, mentre nella modalità notte vengono disabilitate in automatico. Le ombre sono anch’esse composte da due componenti, l’ombra della motrice e quella del rimorchio, e ne seguono il loro movimento, ridisegnando in forma bidimensionale e monocromatica l’oggetto appoggiato al piano Y.
+			</p>
+		</div>
+		</section>
+		<hr>
+		<section id="opengl" class="text-justify my-5 py-5">
+		<div class="my-auto">
+			<h2 class="text-uppercase mb-3">OpenGL</h2>
+			
+			<p>
+				Per sviluppare l’intero progetto sono state utilizzate diverse funzionalità di OpenGL che saranno di seguito elencate e descritte brevemente:
+				<ul>
+				<li><strong>SDL_GLContext, SDL_GL_CreateContext, SDL_GL_DeleteContext</strong> per la creazione e la eliminazione del contesto OpenGL all’interno della window, in modo da poterne sfruttare le funzioni;</li>
+				<li><strong>SDL_GL_SwapWindow</strong> per aggiornare una window con un rendering OpenGL;</li>
+				<li>Una serie di funzioni richiamate nel file GLText per il rendering di scritte dato uno specifico font e una serie di caratteri;
+				<li><strong>glMatrixMode</strong> per settare su quale matrice fare le successive operazioni;</li>
+				<li><strong>glLoadIdentity</strong> per rimpiazzare la matrice attuale con la matrice identità;</li>
+				<li><strong>glTranslatef</strong> per fare una traslazione di un certo (x,y,z), andando a moltiplicare la matrice della modalità corrente per una matrice di traslazione e sostituendo la prima con il risultato ottenuto;</li>
+				<li><strong>glScalef</strong> per ripetere gli stessi passaggi precedenti ma per dei fattori (x,y,z) di scala;</li>
+				<li><strong>glRotatef</strong> per ripetere gli stessi passaggi precedenti ma per una rotazione di un numero di gradi specificato intorno ai vettori (x,y,z);</li>
+				<li><strong>glBindTexture</strong> per la creazione e l’utilizzo di una texture (2D o 3D ad esempio) dato un nome di riferimento;</li>
+				<li><strong>gluBuild2DMipmaps</strong> per l’antialiasing della texture data costruendone un mipmap, ovvero un mapping bidimensionale della texture a una risoluzione più bassa tramite una serie di filtri;</li>
+				<li><strong>glTexParameteri</strong> per definire i parametri da utilizzare durante il texture mapping, ad esempio il tipo di mapping (come magnification o minifying) e la funzione per eseguire tale processo (come nearest o linear);</li>
+				<li><strong>glColor3f</strong> per determinare il tipo di colore da utilizzare in base a parametri che rappresentano rosso, giallo e blu;</li>
+				<li><strong>glBegin e glEnd</strong> per delimitare una porzione dove saranno elencati dei vertici che definiscono una primitiva o un gruppo di primitive a seconda del parametro specificato;</li>
+				<li><strong>glVertex3f</strong> per specificare vertici di punti, linee o poligoni;</li>
+				<li><strong>glNormal3f</strong> per definire le normali, durante ad esempio la creazione del cielo;</li>
+				<li><strong>glPushMatrix e glPopMatrix</strong> per duplicare la corrente matrice e abbassarla di uno nello stack e fare l’operazione inversa;</li>
+				<li><strong>glEnable e glDisable</strong> per abilitare e disabilitare una serie funzionalità che sono di base settate a false;</li>
+				<li><strong>gluLookAt</strong> nel setting della camera per generare una matrice di vista prendendo come parametri la posizione dell’occhio, un punto di riferimento che indica il centro della scena e un UP vector che determina quale direzione è “up”;</li>
+				<li><strong>glPolygonMode</strong> per definire come i poligoni devono essere rasterizzati (quale faccia e in che modo);</li>
+				<li><strong>glTexGeni</strong> per selezionare una funzione che generi le coordinate della texture;</li>
+				<li><strong>glLineWidth</strong> per settare la dimensione delle linee;</li>
+				<li><strong>glViewport</strong> per specificare la trasformazione nello spazio affine di x e y dalle coordinate normalizzate del dispositivo alle coordinate della window;</li>
+				<li><strong>glClear</strong> per settare i valori dei bit di un determinato buffer a un valore specificato in funzioni come glClearColor;</li>
+				<li><strong>gluPerspective</strong> per specificare un frustum di vista nelle coordinate mondo, le quali proporzioni generalmente dovrebbero essere in relazione con quelle associate alla viewport;</li>
+				<li><strong>glLightfv</strong> per settare i valori di una sorgente luminosa;</li>
+				<li><strong>glMaterialfv</strong> per assegnare dei valori ai parametri di un materiale;</li>
+				<li><strong>glFrontFace</strong> per considerare le facce frontali in base a un ordine orario o antiorario, in modo che sia possibile eliminare il rendering delle facce nascoste </li>
+				<li><strong>glColorMaterial</strong> specifica quali parametri dei materiali devono assumere il colore corrente;</li>
+				<li><strong>glPushAttrib</strong> per indicare tramite una maschera, passata come parametro, quale gruppo di variabili di stato salvare sullo stack degli attributi;</li>
+				<li><strong>glCallList</strong> per eseguire i comandi salvati in una display list.</li>
+				</ul>
+				
+			</p>
+			<div class="text-right">
+			<figure class="figure">
+			  <img src="img/opengl_logo.png" class="figure-img img-fluid rounded-lg" width=300 alt="Responsive image">
+			  <figcaption class="figure-caption text-right text-dark">Logo OpenGL</figcaption>
+			</figure>
+			</div>
+			
+		</div>
+		</section>
+		<hr>
+		<section id="info" class="text-justify my-5 py-5">
+		<div class="my-auto">
+			<h2 class="text-uppercase mb-3">Altre Informazioni</h2>
+			<p>
+				Oltre al codice “GLText.cpp” già citato messo a disposizione ed utilizzato per sfruttare diversi tipi di font scaricabili dal web e disegnare le scritte sulla window, sono stati usati altri 2 file di codice pubblici per la realizzazione del progetto. Uno è il codice “Mesh.cpp” che viene utilizzato per caricare i file in formato obj contenenti le mesh dei modelli 3D, ad esempio della pista, della linea di partenza e della scritta “START”, create con il software Blender, e di tutte le componenti dell’automezzo. L’altro codice è “glm.cpp” utilizzato per caricare i file in formato mtl contenenti i materiali che definiscono gli oggetti dei modelli 3D; questo file è stato modificato per problemi di funzionamento con i file scaricati, in particolare con il nome dell’indice per i gruppi all’interno dello switch-case denominato “vg”, che nel file viene definito invece come “vo”, oltre ad altre funzioni come ad esempio quella per determinare i punti centrali del modello. 
+			</p>
+			<p>
+				Il modello 3D dell’automezzo è stato scaricato dal sito di <a class="text-dark" href="www.turbosquid.com"><strong>turbosquid</strong></a> che offre un archivio con diversi modelli anche free da poter scaricare e riutilizzare all’interno di progetti di computer graphics.
+
+			</p>
+			<div class="text-right">
+			<figure class="figure">
+			  <img src="img/turbosquid_logo.png" class="figure-img img-fluid rounded-lg" width=200 alt="Responsive image">
+			  <figcaption class="figure-caption text-dark">Logo Turbosquid</figcaption>
+			</figure>
+			</div>
+			<p> Occorre infine ricordare che una parte molto importante del lavoro è stata svolta anche dalla libreria SDL oltre che da OpenGL. In particolare, grazie ad essa è stato possibile realizzare tutta la parte inerente alla gestione della interattività con l'utente tramite la creazione di finestre e la ricezione di segnali esterni. Questi ultimi vengono gestiti tramite un ciclo di eventi, che cattura gli input prodotti dal giocatore, come la pressione di un tasto o il click del mouse, e reagisce in un determinato modo in base all'evento registrato.
+			</p>
+			
+			<div class="text-right">
+			<figure class="figure">
+			  <img src="img/sdl_logo.png" class="figure-img img-fluid rounded-lg" width=200 alt="Responsive image">
+			  <figcaption class="figure-caption text-dark">Logo SDL</figcaption>
+			</figure>
+			</div>
+			
+			
+			
+		</div>
+		</section>
+	</div>
+	</div>
+	</div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

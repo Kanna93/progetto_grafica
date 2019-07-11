@@ -26,6 +26,11 @@
 		background:#343a40;
 	
 	}
+	@media (min-width: 768px) {
+		.text-sm-justify {
+			text-align: justify;
+		}
+	}
 	</style>
   <body data-spy="scroll" data-target="#navbar-example3" data-offset="1">
   <div class="container-fluid">
@@ -38,15 +43,15 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav nav-pills mr-auto">
 				<li><a class="navbar-brand my-3 text-light" href="#"><strong> PROGETTO AUTOTRUCK </strong> </a></li>
-				<li class="nav-item"><a class="nav-link" href="#intro">Introduzione</a></li>
-				<li class="nav-item"><a class="nav-link" href="#comandi">Comandi</a></li>
-				<li class="nav-item"><a class="nav-link" href="#fisica">Fisica</a></li>
-				<li class="nav-item"><a class="nav-link" href="#modalita">Modalità di Gioco</a></li>
-				<li class="nav-item"><a class="nav-link" href="#notte">Modalità Notte</a></li>
-				<li class="nav-item"><a class="nav-link" href="#wireframe">Wireframe</a></li>
-				<li class="nav-item"><a class="nav-link" href="#altro">Funzioni Secondarie</a></li>
-				<li class="nav-item"><a class="nav-link" href="#opengl">OpenGL</a></li>
-				<li class="nav-item"><a class="nav-link" href="#info">Altre Informazioni</a></li>
+				<li class="nav-item"><a class="nav-link pl-3" href="#intro">Introduzione</a></li>
+				<li class="nav-item"><a class="nav-link pl-3" href="#comandi">Comandi</a></li>
+				<li class="nav-item"><a class="nav-link pl-3" href="#fisica">Fisica</a></li>
+				<li class="nav-item"><a class="nav-link pl-3" href="#modalita">Modalità di Gioco</a></li>
+				<li class="nav-item"><a class="nav-link pl-3" href="#notte">Modalità Notte</a></li>
+				<li class="nav-item"><a class="nav-link pl-3" href="#wireframe">Wireframe</a></li>
+				<li class="nav-item"><a class="nav-link pl-3" href="#altro">Funzioni Secondarie</a></li>
+				<li class="nav-item"><a class="nav-link pl-3" href="#opengl">OpenGL</a></li>
+				<li class="nav-item"><a class="nav-link pl-3" href="#info">Altre Informazioni</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -79,9 +84,8 @@
 		<h5 class="text-center text-monospace mb-0">Studente: Mattia Benatti</h5>
 		<h5 class="text-center text-monospace mb-0">Corso: Grafica</h5>
 		<h5 class="text-center text-monospace mb-0">Corso di Studi: Informatica Magistrale</h5>
-		<section id="intro" class="text-justify my-5 py-5">
-		<div class="my-auto">
-			
+		<section id="intro" class="text-sm-justify my-5 py-5">
+		<div class="my-auto">			
 			<p class="lead">
 				Il progetto Autotruck consiste in un videogioco nel quale l’utente ha la possibilità di guidare un camion, composto da una motrice e un rimorchio, in diverse tipologie di modalità che saranno spiegate in seguito. Per la realizzazione di questo progetto sono stati ricalcati in generale alcuni dei passaggi svolti nel progetto Car mostrato a lezione, dividendolo inizialmente anche in questo caso in 4 fasi nelle quali sono state aggiunte, modificate e ampliate man mano le funzionalità che integrano il progetto; infine è stata creata una quinta fase finale dove tutto il sistema risulta completo e interattivo, con nuove funzionalità non presenti nel progetto Car di esempio. L'implementazione è stata realizzata interamente in C++ e, in particolare, per la parte di grafica sono state utilizzate le librerie SDL e OpenGL.
 			</p>
@@ -120,7 +124,7 @@
 		</div>
 		</section>
 		<hr>
-		<section id="fisica" class="text-justify my-5 py-5">
+		<section id="fisica" class="text-sm-justify my-5 py-5">
 		<div class="my-auto">
 			<h2 class="text-uppercase mb-3">Fisica</h2>
 			<p>
@@ -133,7 +137,7 @@
 		</div>
 		</section>
 		<hr>
-		<section id="modalita" class="text-justify my-5 py-5">
+		<section id="modalita" class="text-sm-justify my-5 py-5">
 		<div class="my-auto">
 			<h2 class="text-uppercase mb-3">Modalità di Gioco</h2>
 			<p>
@@ -161,7 +165,7 @@
 		</div>
 		</section>
 		<hr>
-		<section id="notte" class="text-justify my-5 py-5">
+		<section id="notte" class="text-sm-justify my-5 py-5">
 		<div class="my-auto">
 			<h2 class="text-uppercase mb-3">Modalità Notte</h2>
 			<p>
@@ -175,7 +179,7 @@
 		</div>
 		</section>
 		<hr>
-		<section id="wireframe" class="text-justify my-5 py-5">
+		<section id="wireframe" class="text-sm-justify my-5 py-5">
 		<div class="my-auto">
 			<h2 class="text-uppercase mb-3">Wireframe</h2>
 			<p>
@@ -189,7 +193,7 @@
 		</div>
 		</section>
 		<hr>
-		<section id="altro" class="text-justify my-5 py-5">
+		<section id="altro" class="text-sm-justify my-5 py-5">
 		<div class="my-auto">
 			<h2 class="text-uppercase mb-3">Funzionalità secondarie</h2>
 			<p>
@@ -204,7 +208,7 @@
 		</div>
 		</section>
 		<hr>
-		<section id="opengl" class="text-justify my-5 py-5">
+		<section id="opengl" class="text-sm-justify my-5 py-5">
 		<div class="my-auto">
 			<h2 class="text-uppercase mb-3">OpenGL</h2>
 			
@@ -254,7 +258,7 @@
 		</div>
 		</section>
 		<hr>
-		<section id="info" class="text-justify my-5 py-5">
+		<section id="info" class="text-sm-justify my-5 py-5">
 		<div class="my-auto">
 			<h2 class="text-uppercase mb-3">Altre Informazioni</h2>
 			<p>
